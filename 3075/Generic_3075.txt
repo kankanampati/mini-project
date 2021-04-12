@@ -1,0 +1,43 @@
+.open idplf1
+
+CREATE TABLE pdisease
+( 
+planttype varchar(15),
+anthracnose char(1),downy char(1),eblight char(1),lblight char(1),
+lspot char(1)
+);
+
+CREATE TABLE ptype
+( 
+planttype varchar(10)
+);
+
+
+
+CREATE TABLE temprt
+( 
+temparature varchar(10)
+);
+
+CREATE TABLE moist
+( 
+moisture varchar(10)
+);
+
+CREATE TABLE ltype
+( 
+leaftype varchar(10)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+

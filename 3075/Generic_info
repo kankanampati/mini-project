@@ -1,0 +1,55 @@
+Start with:idplf1.py
+
+https://www.planetnatural.com/pest-problem-solver/plant-disease/
+https://pdfs.semanticscholar.org/433d/4e68069add079ade95a0eedd87c284bae746.pdf
+
+Other useful sites:
+https://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/template_matching/template_matching.html
+https://pythonspot.com/object-detection-with-templates/
+
+sudo pip install opencv-python
+sudo pip install opencv-contrib-python
+sudo apt install pyqt4-dev-tools
+sudo apt-get install python-mysqldb
+
+pyuic5 idplf.ui -o idplf.py
+pyuic5 limage.ui -o limage.py
+pyuic5 disease.ui -o disease.py
+pyuic5 moist.ui -o moist.py
+pyuic5 temprt.ui -o temprt.py
+pyuic5 ltype.ui -o ltype.py
+pyuic5 ptype.ui -o ptype.py
+
+
+.open idplf1
+
+CREATE TABLE pdisease
+( 
+planttype varchar(15),
+anthracnose char(1),downy char(1),eblight char(1),lblight char(1),
+lspot char(1)
+);
+
+CREATE TABLE ptype
+( 
+planttype varchar(10)
+);
+
+
+CREATE TABLE temprt
+( 
+temparature varchar(10)
+);
+
+CREATE TABLE moist
+( 
+moisture varchar(10)
+);
+
+CREATE TABLE ltype
+( 
+leaftype varchar(10)
+);
+
+
+
